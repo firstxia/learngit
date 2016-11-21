@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txt_size" type="id">大小:%s</item>
+</resources>

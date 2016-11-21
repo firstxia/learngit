@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="500">
+    <!--android:enterFadeDuration="500" 延时500毫秒执行,正常的状态,就是不按压的状态,写到下面,可以不添加pressed属性-->
+    <item android:drawable="@drawable/grid_item_bg_pressed" android:state_pressed="true" />
+    <item android:drawable="@drawable/grid_item_bg_normal" />
+</selector>

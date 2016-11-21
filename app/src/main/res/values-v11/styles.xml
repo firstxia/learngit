@@ -1,0 +1,8 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MyBaseTheme">
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+    </style>
+</resources>

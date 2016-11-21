@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:castit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp">
+    <!-- 这个FrameLayout布局不能省,因为以layout开头的属性,必须是要经过父布局批准的-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg">
+
+        <com.xialm.googleplayme.view.RatioLayout
+            android:id="@+id/ratioLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            castit:ratio="2.43">
+
+            <!--android:scaleType="fitCenter"-->
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_default" />
+        </com.xialm.googleplayme.view.RatioLayout>
+
+        <TextView
+            android:id="@+id/item_txt"
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ratioLayout"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</FrameLayout>
